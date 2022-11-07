@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="slide.css" rel="stylesheet" />
+    <title>Javascript Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+                    <h2>Hover on right and left sides of the image respectively</h2>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/image1.jpg" /></div>
+          <div class="swiper-slide"><img src="./assets/image5.jpg" /></div>
+          <div class="swiper-slide"><img src="./assets/image2.jpg" /></div>
+          <div class="swiper-slide"><img src="./assets/image4.jpg" /></div>
+          <div class="swiper-slide"><img src="./assets/image3.jpg" /></div>
+          <div class="swiper-slide"><img src="./assets/image6.jpg" /></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
